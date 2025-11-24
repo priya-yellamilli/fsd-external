@@ -1,0 +1,33 @@
+//app.js
+import React from 'react';
+import './App.css';
+import './App.scss';
+function App() {
+const user = { name: "Anjali", age: 21 };
+return (
+<div className="card">
+<h2 className="title">User Info</h2>
+<p>Name: {user.name}</p>
+<p>Age: {user.age}</p>
+</div>
+);
+}
+export default App;
+//app.css
+.card {
+border: 2px solid #4caf50;
+padding: 10px;
+width: 200px;
+text-align: center;
+}
+//app.scss
+$title-color: #2196f3;
+.title {
+color: $title-color;
+font-family: Arial, sans-serif;
+}
+
+OUTPUT
+User Info
+Name: Anjali
+Age: 21
