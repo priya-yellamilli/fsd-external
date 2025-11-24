@@ -1,0 +1,15 @@
+// App.js
+import React from 'react';
+function App() {
+const fruits = ['Apple', 'Banana', 'Mango'];
+return (
+<ul>
+{fruits.map(f => <li key={f}>{f}</li>)}
+</ul>
+);
+}
+export default App;
+OUTPUT
+• Apple
+• Banana
+• Mango
