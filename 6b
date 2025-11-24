@@ -1,0 +1,22 @@
+create a database
+
+use myDatabase  
+output: switched to db myDatabase
+
+
+create a collection
+
+db.createCollection("students")  
+output: { ok: 1 }
+
+
+drop a collection
+
+db.students.drop()  
+output: true
+
+
+drop a database
+
+db.dropDatabase()  
+output: { ok: 1, dropped: "myDatabase" }
