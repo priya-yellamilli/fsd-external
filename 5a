@@ -1,0 +1,25 @@
+(In browser)
+Hello from Express!
+4(b) Write a React JS program for responding to events.
+// App.js
+import React from 'react';
+function App() {
+const handleClick = () => alert('Button Clicked!');
+return <button onClick={handleClick}>Click Me</button>;
+}
+export default App;
+OUTPUT
+Button Clicked!
+5.(a) Write a ExpressJS program for user authentication.
+const express = require('express');
+const app = express();
+app.use(express.json());
+app.post('/login', (req, res) => {
+const { user, pass } = req.body;
+user === 'admin' && pass === '1234'
+? res.send('Login Successful')
+: res.send('Invalid Credentials');
+});
+app.listen(3000, () => console.log('Server running'));
+
+OUTPUT { "user": "admin", "pass": "1234" }
