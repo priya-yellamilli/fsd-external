@@ -1,0 +1,13 @@
+// Create (Insert)
+db.students.insert({ name: "Anjali", age: 21 });
+// Read (Find)
+db.students.find({ name: "Anjali" });
+// Update
+db.students.update({ name: "Anjali" }, { $set: { age: 22 } });
+// Delete (Remove)
+db.students.remove({ name: "Anjali" });
+OUTPUT
+ After insert() → document added
+ After find() → shows { "_id": ..., "name": "Anjali", "age": 21 }
+ After update() → age changes to 22
+ After remove() → document deleted
