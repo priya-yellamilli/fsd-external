@@ -1,0 +1,17 @@
+just create with npx create-react-app myapp, replace App.js with the above code, and run
+npm start.
+// App.js
+import React from 'react';
+function App() {
+return (
+<div>
+<h2>Hello React!</h2>
+<p>This is rendered HTML.</p>
+</div>
+);
+}
+export default App;
+
+OUTPUT
+Hello React!
+This is rendered HTML.
