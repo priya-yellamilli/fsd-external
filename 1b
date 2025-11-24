@@ -1,0 +1,20 @@
+// App.js
+import React from 'react';
+function Child({ message }) {
+return <h3>Message from Parent: {message}</h3>;
+}
+function App() {
+const data = "Hello from Parent Component!";
+return (
+<div>
+<h2>React Data Sharing Example</h2>
+<Child message={data} />
+</div>
+);
+}
+export default App;
+
+
+OUTPUT
+React Data Sharing Example
+Message from Parent: Hello from Parent Component!
